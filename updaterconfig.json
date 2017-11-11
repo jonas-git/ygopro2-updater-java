@@ -1,0 +1,35 @@
+{
+  "repositories": [
+    {
+      "owner": "shadowfox87",
+      "name": "ygopro2",
+      "files": [
+        { "/**.*": "./" }
+      ]
+    },
+    {
+      "owner": "Ygoproco",
+      "name": "Live2017Links",
+      "files": [
+        { "/script/c?*.lua": "./script" },
+        { "/*.cdb": "./cdb" },
+        { "/*.conf": "./conf" }
+      ]
+    },
+    {
+      "owner": "shadowfox87",
+      "name": "YGOSeries10CardPics",
+      "files": [
+        { "/pics/*.png": "./pics" },
+        { "/pics/field/*.png": "./pics/field" }
+      ]
+    },
+    {
+      "owner": "shadowfox87",
+      "name": "YGOCloseupsPng300x300",
+      "files": [
+        { "/pics/closeup/*.png": "./pics/closeup" }
+      ]
+    }
+  ]
+}
