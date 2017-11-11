@@ -7,7 +7,7 @@ public class UpdaterException extends RuntimeException {
         super(cause);
     }
 
-    public UpdaterException(String message, Throwable cause) {
+    public UpdaterException(Throwable cause, String message) {
         super(message, cause);
     }
 
