@@ -35,11 +35,11 @@ updateconfig.json: {
 			"owner": "<owner>",
 			"name": "<repo>",
 			"files": {
-			    // source: a file path with zero or more wildcards
-			    // destination: the folder in which a matched file should be put into
-                "<source>": "<destination>"
-                // ...
-            }
+				// source: a file path with zero or more wildcards
+				// destination: the folder in which a matched file should be put into
+				"<source>": "<destination>"
+				// ...
+			}
 		},
 		// ...
 	]
