@@ -3,18 +3,16 @@ import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
 public class Program {
-    private static final String PROPERTIES_FILENAME = "resources/updater.properties";
-
     private static String readManifestValue(String name) {
-        String jarName = Program.class.getProtectionDomain().getCodeSource().getLocation().getFile();
+        String jarPath = Program.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 
         try {
-            JarFile jarFile = new JarFile(jarName);
+            JarFile jarFile = new JarFile(jarPath);
             Manifest manifest = jarFile.getManifest();
             return manifest.getMainAttributes().getValue(name);
         }
         catch (IOException e) {
-            throw new UpdaterException(e, "Failed to access the manifest of %s", jarName);
+            throw new UpdaterException(e, "Failed to access the manifest of %s", jarPath);
         }
     }
 
