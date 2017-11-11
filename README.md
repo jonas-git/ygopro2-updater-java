@@ -1,1 +1,0 @@
-# ygopro2-updater-java
