@@ -8,8 +8,6 @@ the underlying configuration file.
 
 Compiling:
   - The IntelliJ IDEA is recommended for this process
-  - Create a custom Manifest with a key "GitHub-Token" that holds a valid GitHub API key
-      for the repositories listed in the configuration file (updaterconfig.json)
   - The following libraries are needed at compile time and expected to be in the "lib" folder:
       * Google Gson 2.8.2: gson-2.8.2.jar
 
@@ -43,6 +41,8 @@ step A - download:
   -> corresponding folders are the target download folders named in updateconfig.json (field 'destination')
 
 updateconfig.json: {
+    // the encrypted GitHub API token:
+    "encrypted_token": "<token>",
 	"repositories:" [
 		{
 			"owner": "<owner>",
