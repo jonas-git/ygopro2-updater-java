@@ -2,7 +2,7 @@ Compiling:
   - The IntelliJ IDEA is recommended for this process
   - Create a custom Manifest with a key "GitHub-Token" that holds a valid GitHub API key
       for the repositories listed in the configuration file (updaterconfig.json)
-  - The following libraries are needed at compile time (the current settings expect them to be in the "lib" folder):
+  - The following libraries are needed at compile time and expected to be in the "lib" folder:
       * Google Gson 2.8.2: gson-2.8.2.jar
 
 ____________________
