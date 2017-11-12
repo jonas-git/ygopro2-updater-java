@@ -5,9 +5,6 @@ Compiling:
   - The following libraries are needed at compile time and expected to be in the "lib" folder:
       * Google Gson 2.8.2: gson-2.8.2.jar
 
-____________________
-
-
 Terminology and syntax:
   - "api" stands for the official GitHub API (api.github.com).
   - "raw" stands for the server that delivers raw GitHub repository content (raw.githubusercontent.com).
@@ -18,7 +15,6 @@ HTTP headers required (*) (or recommended) for some requests (which are specifie
    (  api  ) "Accept: application/vnd.github.v3+json"
  * (api/raw) "Authorization: Token <token>"
 
-
 Initial download (when no log file exists yet):
   - get the tree of the master branch with {/repos/:owner/:repo/git/trees/master?recursive=1}
   - visit step A
@@ -26,7 +22,7 @@ Initial download (when no log file exists yet):
 
 Update of previous downloads (when there is a log file):
   - get the tree with the updated files by comparing the sha of the lastly downloaded branch
-        to the most recent one (master): {/repos/:owner/:repo/compare/:sha...master}
+      to the most recent one (master): {/repos/:owner/:repo/compare/:sha...master}
   - remove deleted files from the local file system and the list in updatelog.json
   - redownload files from the list that are missing locally [/:owner/:repo/:sha/:path]
   - download the rest of the files that were added or modified (with step A)
@@ -37,7 +33,6 @@ step A - download:
 - download all matching files in the tree into their corresponding folders from [/:owner/:repo/:sha/:path]
   -> matching files are files that match the pattern in updateconfig.json (field 'source')
   -> corresponding folders are the target download folders named in updateconfig.json (field 'destination')
-
 
 updateconfig.json: {
 	"repositories:" [
