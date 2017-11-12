@@ -1,3 +1,11 @@
+ygopro2-updater-java
+
+This program's purpose is downloading and maintaining the most up-to-date YGOPro II game data from
+various online GitHub repositories. Its configurability allows for so much versatility, that one
+can easily use it to download data of different kinds from GitHub repositories by simply manipulating
+the underlying configuration file.
+
+
 Compiling:
   - The IntelliJ IDEA is recommended for this process
   - Create a custom Manifest with a key "GitHub-Token" that holds a valid GitHub API key
