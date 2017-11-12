@@ -6,7 +6,7 @@ public class Program {
     private static final String LOCAL_CONFIG_FILE = "./updaterconfig.json";
 
     public static void main(String[] args) {
-        UpdaterConfig config = null;
+        UpdaterConfig config;
 
         try {
             config = UpdaterConfig.fromFile(LOCAL_CONFIG_FILE);
