@@ -40,6 +40,7 @@ step A - download:
   -> matching files are files that match the pattern in updateconfig.json (field 'source')
   -> corresponding folders are the target download folders named in updateconfig.json (field 'destination')
 
+
 updateconfig.json: {
     // the encrypted GitHub API token:
     "encrypted_token": "<token>",
